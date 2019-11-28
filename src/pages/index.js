@@ -1,4 +1,4 @@
-import React, { useEffect } from "react"
+import React from "react"
 import AdSense from "react-adsense";
 
 import { Link } from "gatsby"
@@ -9,22 +9,6 @@ import SEO from "../components/seo"
 
 
 const IndexPage = () => {
-
-  const insertAdSense = () => {
-    const script = document.createElement('script');
-    script.src = 'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js';
-    document.body.appendChild(script);
-
-    (window.adsbygoogle = window.adsbygoogle || []).push({
-      google_ad_client: "ca-pub-6583782974868046",
-      enable_page_level_ads: true
-    });
-  }
-
-  useEffect(() => {
-    insertAdSense();
-  }, []);
-
   return (
     <Layout>
       <SEO title="Home" />

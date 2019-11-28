@@ -19,6 +19,7 @@ function SEO({ description, lang, meta, title }) {
             title
             description
             author
+            googleSiteVerification
           }
         }
       }
@@ -35,6 +36,10 @@ function SEO({ description, lang, meta, title }) {
       title={title}
       titleTemplate={`%s | ${site.siteMetadata.title}`}
       meta={[
+        {
+          name: 'google-site-verification',
+          content: site.siteMetadata.googleSiteVerification || ''
+        },
         {
           name: `description`,
           content: metaDescription,
