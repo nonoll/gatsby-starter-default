@@ -12,14 +12,16 @@ import { useStaticQuery, graphql } from "gatsby"
 import Header from "./header"
 import "./layout.css"
 
-const script = document.createElement('script');
-script.src = 'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js';
-document.body.appendChild(script);
-
-(window.adsbygoogle = window.adsbygoogle || []).push({
-  google_ad_client: "ca-pub-6583782974868046",
-  enable_page_level_ads: true
-});
+if (typeof document !== 'undefined') {
+  const script = document.createElement('script');
+  script.src = 'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js';
+  document.body.appendChild(script);
+  
+  (window.adsbygoogle = window.adsbygoogle || []).push({
+    google_ad_client: "ca-pub-6583782974868046",
+    enable_page_level_ads: true
+  });
+}
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
