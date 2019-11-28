@@ -1,3 +1,6 @@
+[![Netlify Status](https://api.netlify.com/api/v1/badges/0fa9c133-45aa-43d4-b481-874fc9ae8f27/deploy-status)](https://app.netlify.com/sites/nonoll/deploys) [![Build Status](https://travis-ci.org/nonoll/gatsby-starter-default.svg?branch=master)](https://travis-ci.org/nonoll/gatsby-starter-default)
+
+
 <!-- AUTO-GENERATED-CONTENT:START (STARTER) -->
 <p align="center">
   <a href="https://www.gatsbyjs.org">
